@@ -9,7 +9,7 @@ This project uses a Random Forest Classifier to predict the **discovery method**
 ## Dataset
 Exoplanets dataset (`exoplanets.csv`) containing physical characteristics of discovered exoplanets, including mass, radius, orbital period, and host star properties.
 
-##issue
+## Issue
 Initial model showed 98% accuracy but failed completely on minority classes due to class imbalance. After using median imputation (instead of dropping rows) and class_weight='balanced', accuracy dropped to 80% but became far more meaningful — all classes are now actually being learned, with the model showing a precision-recall tradeoff particularly visible in the microlensing class
 
 ## Key Features Used
